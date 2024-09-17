@@ -125,3 +125,186 @@ nav ul a {
 }
 
  
+
+
+
+/* Index Page */
+
+.indexEntryPointcontainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5rem;
+    height: 30rem;
+  }
+  
+  .indexEntryPoint {
+    position: relative;
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .indexEntryImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+  }
+  
+  .indexoverlayText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    display: flex;
+  }
+  
+  .indexEntryText {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10%;
+  }
+  
+
+  /* Slider */
+
+  .cardSliderSection {
+    background: var(--beigeSections);
+
+  }
+ 
+  .cardSliderSectionText {
+    padding: 2rem 5rem 2rem 5rem;
+
+  }
+
+  .cardSliderSectionText h2 {
+    padding-bottom: 2rem;
+    font-size: 30px;
+  }
+  
+  .cardSlider {
+    display: flex;
+    padding: 0 5rem 5rem 5rem;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.singularAnimalCard {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: white;
+    color: #342716;
+    text-decoration: none;
+    flex: 1; 
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.singularAnimalCard img {
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+    height: 10rem;
+    object-fit: cover; 
+}
+
+.animalInfoCard {
+    font-size: 16px;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.animalInfoCard h3 {
+    font-size: 25px;
+    background: var(--coffeeBrown);
+    color: white;
+    padding: 0.5rem; 
+}
+
+.animalInfoCard button {
+    background-color: var(--babyBlue);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content; 
+    align-self: center; 
+}
+
+
+.animalInfoMeta {
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconText i {
+    color: #CDB693;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+
+
+}
+
+/* Blog Section */
+
+.singularBlogCard {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: white;
+    color: #342716;
+    text-decoration: none;
+    flex: 1; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.singularBlogCard img {
+    border-radius: 50%; 
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover; 
+}
+
+.authorBlogCard {
+    display: flex;
+}
+
+.authorBlogCard div {
+    flex-direction: column;
+    padding: .7rem;
+}
+
+.authorBlogCard div p:nth-child(2) {
+    font-style: italic;
+}
+
+.ButtonStylingBlogPost{
+    color:white;
+    background-color: var(--babyBlue);
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 6px;
+
+}
+
