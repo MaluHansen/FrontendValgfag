@@ -175,12 +175,6 @@ nav ul a {
     font-style: italic;
     color: var(--coffeeBrown);
 }
-.single-animal{
-    display: flex;
-}
-.single-animal-data{
-
-}
 .single-animal-header{
     display: flex;
     align-items: baseline;
@@ -201,10 +195,44 @@ nav ul a {
 .single-animal-img img{
     width: 100%;
 }
-#col-left{
+.single-animal{
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 4rem;
 }
-#col-right{
-
+.single-animal-content{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.single-animal-data{
+    display: flex;
+    gap: 4rem;
+}
+.single-animal-data p{
+    margin: 1rem 1rem 0 0;
+    color: var(--coffeeBrown);
+    font-weight: 600;
+}
+.single-animal-data span{
+    margin-left: 1rem;
+    font-weight: 400;
+}
+.single-animal-description{
+    width: 50%;
+}
+.single-animal-description p{
+    margin-bottom: 2rem;
+}
+.animal-meeting-book{
+    width: 50%;
+    background-color: red;
+}
+.animal-h2{
+    color: var(--coffeeBrown);
+    font-weight: 500;
+    font-size: 2rem;
 }
 
 
