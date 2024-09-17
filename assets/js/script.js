@@ -7,3 +7,5 @@ function selectButton(buttonId) {
     // Tilføjer 'active' class til den knap der bliver trykket op
     document.getElementById(buttonId).classList.add('active');
 }
+
+

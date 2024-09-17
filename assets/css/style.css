@@ -202,7 +202,7 @@ nav ul a {
     transition: font-size 0.3s ease-in-out; 
 }
 
-/* Hover effect */
+/* Hover effect Entry Points*/
 .indexEntryPoint:hover .indexEntryImage {
     transform: scale(1.20); 
 }
@@ -217,8 +217,7 @@ nav ul a {
 
   
 
-  /* Slider */
-
+  /* Animal Slider Section*/
   .cardSliderSection {
     background: var(--beigeSections);
 
@@ -283,7 +282,8 @@ nav ul a {
 
 }
 
-/* Blog Section */
+
+/* Blog Slider Section */
 
 .singularBlogCard {
     border: 1px solid #ccc;
