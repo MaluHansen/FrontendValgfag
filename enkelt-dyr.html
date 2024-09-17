@@ -79,25 +79,31 @@
         
         <div class="animal-meeting-book">
             <h2 class="animal-h2">Book et møde med Allan</h2>
-            <!-- <div class="form-section">
-                <label for="name">Navn</label>
-                <input type="text" id="name" placeholder="Navn">
-    
-                <label for="email">Email</label>
+            <div class="calendar-form-section">
+                <div class="form-section">
+                <input type="text" id="name" placeholder="Navn">            
                 <input type="email" id="email" placeholder="Email">
-    
-                <label for="phone">Telefon</label>
                 <input type="tel" id="phone" placeholder="Telefon">
-    
-                <p>Hvor kan vi kontakte dig:</p>
+                <p>
+                    Vælg en af de ledige datoer.
+                    Vi vender tilbage med bekræftelse
+                </p>
                 <div class="checkboxes">
-                    <label><input type="checkbox" id="contact-phone" checked> Mobil</label>
-                    <label><input type="checkbox" id="contact-email" checked> Email</label>
+                    <p>Hvor kan vi kontakte dig:</p>
+                    <label class="checkbox-container"> Mobil
+                        <input type="checkbox" id="contact-phone">
+                        <span class="checkbox-style"></span>
+                    </label>
+                    <label class="checkbox-container"> Email
+                        <input type="checkbox" id="contact-email">
+                        <span class="checkbox-style"></span>
+                    </label>
                 </div>
-            </div> -->
-            <h3 class="calendar-header"></h3>
-            <div class="calendar">
-              <div class="days">
+                </div>
+                <div class="calendar-section">
+                <h3 class="calendar-header"></h3>
+                <div class="calendar">
+                <div class="days">
                 <p>Man</p>
                 <p>Tirs</p>
                 <p>Ons</p>
@@ -105,14 +111,14 @@
                 <p>Fre</p>
                 <p>Lør</p>
                 <p>Søn</p>
-              </div>
-              <div class="dates" id="dates-grid"></div>
-            </div>
-            <div class="bottom-bar">
-              <span class="selectedDate">Valgt Dato</span>
-              <button id="confirmButton" class="generalButtonStyling">Bekræft</button>
-            </div>
-          </div>
+                </div>
+                <div class="dates" id="dates-grid"></div>
+                </div>
+                <div class="bottom-bar">
+                <div class="selectedDate"><p>Valgt Dato</p></div>
+                <button class="generalButtonStyling">Bekræft</button>
+                </div>
+                </div>
         </div>
     </main>
   </body>
