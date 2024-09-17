@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="./assets/js/script.js" defer></script>
   </head>
   <body>
     <header class="header-animal">
@@ -75,9 +76,43 @@
 
             <p>Hvis du er interesseret i at møde Allan er du velkommen til at booke et besøg hos ham. Brug formularen til højre, vælg en dato og vent på at vi bekræfter dit besøg.</p>
         </div>
+        
         <div class="animal-meeting-book">
             <h2 class="animal-h2">Book et møde med Allan</h2>
-        </div>
+            <!-- <div class="form-section">
+                <label for="name">Navn</label>
+                <input type="text" id="name" placeholder="Navn">
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email">
+    
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" placeholder="Telefon">
+    
+                <p>Hvor kan vi kontakte dig:</p>
+                <div class="checkboxes">
+                    <label><input type="checkbox" id="contact-phone" checked> Mobil</label>
+                    <label><input type="checkbox" id="contact-email" checked> Email</label>
+                </div>
+            </div> -->
+            <h3 class="calendar-header"></h3>
+            <div class="calendar">
+              <div class="days">
+                <p>Man</p>
+                <p>Tirs</p>
+                <p>Ons</p>
+                <p>Tors</p>
+                <p>Fre</p>
+                <p>Lør</p>
+                <p>Søn</p>
+              </div>
+              <div class="dates" id="dates-grid"></div>
+            </div>
+            <div class="bottom-bar">
+              <span class="selectedDate">Valgt Dato</span>
+              <button id="confirmButton" class="generalButtonStyling">Bekræft</button>
+            </div>
+          </div>
         </div>
     </main>
   </body>

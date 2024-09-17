@@ -225,17 +225,71 @@ nav ul a {
 .single-animal-description p{
     margin-bottom: 2rem;
 }
+
+/*-----Calendar--------*/
 .animal-meeting-book{
     width: 50%;
-    background-color: red;
+    /* background-color: red; */
+    
+    padding: 20px;
+    text-align: center;
 }
 .animal-h2{
     color: var(--coffeeBrown);
     font-weight: 500;
     font-size: 2rem;
 }
+.calendar-header{
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#dates-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+#dates-grid div {
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#dates-grid div:hover {
+    background-color: #cce7ff;
+}
+
+.selected {
+    background-color: #47a7f5;
+    color: white;
+}
+.bottom-bar{}
 
 
+
+/* .checkboxes label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+} */
 /* ------------------------------------ styling enkelt-dyr-------------------------------------- */
 
  
