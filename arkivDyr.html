@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sejrsen</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="./index.html" class="headerLogo">Sejr & Davidsen</a>
+        <nav class="navbarItems">
+          <ul>
+            <li><a href="#">Forside</a></li>
+            <li><a href="#">Adopter</a></li>
+            <li><a href="#">Pension</a></li>
+            <li><a href="#">Hvem er vi</a></li>
+            <li><a href="#">Blog & Tips</a></li>
+            <li><a href="#">Indlever</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+        <a href="#"><button class="generalButtonStyling">Donér</button></a>
+      </div>
+      <div class="heroContent">
+        <h1>GIV VORES DYR ET HJEM</h1>
+      </div>
+      <img src="./assets/img/dyreArkivHero.jpg" alt="" class="heroImage" />
+    </header>
+    <main>
+      <div class="dyreArkivContainer">
+        <div class="dyreArkivFilterContainer">
+          <div class="buttonCatDogContainer">
+            <button
+              class="buttonCatDog"
+              id="button1"
+              onclick="selectButton('button1')"
+            >
+              <div class="iconCircle">
+                <i class="fas fa-dog"></i>
+              </div>
+              <span>Hunde</span>
+            </button>
+            <button
+              class="buttonCatDog"
+              id="button2"
+              onclick="selectButton('button2')"
+            >
+              <div class="iconCircle">
+                <i class="fas fa-cat"></i>
+              </div>
+              <span>Katte</span>
+            </button>
+          </div>
+          <div class="arkivDyrfilter">
+            <h2>Filtrer din søgning</h2>
+
+            <div class="arkivFilterItem">
+              <label for="alder">Alder</label>
+              <select id="alder" name="alder">
+                <option value="alle">Alle</option>
+                <option value="1-3">1-3 år</option>
+                <option value="4-6">4-6 år</option>
+                <option value="7-10">7-10 år</option>
+                <option value="11+">11+ år</option>
+              </select>
+            </div>
+
+            <div class="arkivFilterItem">
+              <label for="race">Race</label>
+              <select id="race" name="race">
+                <option value="alle">Alle</option>
+                <option value="bulldog">Bulldog</option>
+                <option value="schæfer">Schæfer</option>
+              </select>
+            </div>
+
+            <div class="arkivFilterItem">
+              <label for="koen">Køn</label>
+              <select id="koen" name="koen">
+                <option value="alle">Vælg</option>
+                <option value="han">Han</option>
+                <option value="hun">Hun</option>
+              </select>
+            </div>
+
+            <div class="arkivFilterItem">
+              <label for="storrelse">Størrelse</label>
+              <select id="storrelse" name="storrelse">
+                <option value="alle">Alle</option>
+                <option value="sm">Små</option>
+                <option value="me">Mellemstore</option>
+                <option value="st">Store</option>
+              </select>
+            </div>
+
+            <div class="arkivFilterItem">
+              <label for="allergivenlig">Allergivenlig</label>
+              <select id="allergivenlig" name="allergivenlig">
+                <option value="alle">Vælg</option>
+                <option value="ja">Ja</option>
+                <option value="nej">Nej</option>
+              </select>
+            </div>
+
+            <div class="arkivFilterItem">
+              <label for="boernevenlig">Børnevenlig</label>
+              <select id="boernevenlig" name="boernevenlig">
+                <option value="alle">Vælg</option>
+                <option value="ja">Ja</option>
+                <option value="nej">Nej</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="dyreArkivGrid">
+          <a href="#" class="singularAnimalCard">
+            <img
+              src="./assets/img/germanShepard.jpg"
+              alt="Albert, a German Shepherd"
+            />
+            <div class="animalInfoCard">
+              <h3>Albert</h3>
+              <div class="animalInfoMeta">
+                <div class="iconText">
+                  <i class="fa-solid fa-paw"></i>
+                  <p>Schæfer</p>
+                </div>
+                <div class="iconText">
+                  <i class="fas fa-birthday-cake"></i>
+                  <p>5 år</p>
+                </div>
+                <div class="iconText">
+                  <i class="fa-solid fa-venus-mars"></i>
+                  <p>Han</p>
+                </div>
+              </div>
+              <button>LÆS MERE</button>
+            </div>
+          </a>
+          <a href="#" class="singularAnimalCard">
+            <img
+              src="./assets/img/germanShepard.jpg"
+              alt="Albert, a German Shepherd"
+            />
+            <div class="animalInfoCard">
+              <h3>Albert</h3>
+              <div class="animalInfoMeta">
+                <div class="iconText">
+                  <i class="fa-solid fa-paw"></i>
+                  <p>Schæfer</p>
+                </div>
+                <div class="iconText">
+                  <i class="fas fa-birthday-cake"></i>
+                  <p>5 år</p>
+                </div>
+                <div class="iconText">
+                  <i class="fa-solid fa-venus-mars"></i>
+                  <p>Han</p>
+                </div>
+              </div>
+              <button>LÆS MERE</button>
+            </div>
+          </a>
+          <a href="#" class="singularAnimalCard">
+            <img
+              src="./assets/img/germanShepard1.jpg"
+              alt="Albert, a German Shepherd"
+            />
+            <div class="animalInfoCard">
+              <h3>Albert</h3>
+              <div class="animalInfoMeta">
+                <div class="iconText">
+                  <i class="fa-solid fa-paw"></i>
+                  <p>Schæfer</p>
+                </div>
+                <div class="iconText">
+                  <i class="fas fa-birthday-cake"></i>
+                  <p>5 år</p>
+                </div>
+                <div class="iconText">
+                  <i class="fa-solid fa-venus-mars"></i>
+                  <p>Han</p>
+                </div>
+              </div>
+              <button>LÆS MERE</button>
+            </div>
+          </a>
+          <a href="#" class="singularAnimalCard">
+            <img
+              src="./assets/img/germanShepard.jpg"
+              alt="Albert, a German Shepherd"
+            />
+            <div class="animalInfoCard">
+              <h3>Albert</h3>
+              <div class="animalInfoMeta">
+                <div class="iconText">
+                  <i class="fa-solid fa-paw"></i>
+                  <p>Schæfer</p>
+                </div>
+                <div class="iconText">
+                  <i class="fas fa-birthday-cake"></i>
+                  <p>5 år</p>
+                </div>
+                <div class="iconText">
+                  <i class="fa-solid fa-venus-mars"></i>
+                  <p>Han</p>
+                </div>
+              </div>
+              <button>LÆS MERE</button>
+            </div>
+          </a>
+          <a href="#" class="singularAnimalCard">
+            <img
+              src="./assets/img/germanShepard.jpg"
+              alt="Albert, a German Shepherd"
+            />
+            <div class="animalInfoCard">
+              <h3>Albert</h3>
+              <div class="animalInfoMeta">
+                <div class="iconText">
+                  <i class="fa-solid fa-paw"></i>
+                  <p>Schæfer</p>
+                </div>
+                <div class="iconText">
+                  <i class="fas fa-birthday-cake"></i>
+                  <p>5 år</p>
+                </div>
+                <div class="iconText">
+                  <i class="fa-solid fa-venus-mars"></i>
+                  <p>Han</p>
+                </div>
+              </div>
+              <button>LÆS MERE</button>
+            </div>
+          </a>
+          <a href="#" class="singularAnimalCard">
+            <img
+              src="./assets/img/germanShepard.jpg"
+              alt="Albert, a German Shepherd"
+            />
+            <div class="animalInfoCard">
+              <h3>Albert</h3>
+              <div class="animalInfoMeta">
+                <div class="iconText">
+                  <i class="fa-solid fa-paw"></i>
+                  <p>Schæfer</p>
+                </div>
+                <div class="iconText">
+                  <i class="fas fa-birthday-cake"></i>
+                  <p>5 år</p>
+                </div>
+                <div class="iconText">
+                  <i class="fa-solid fa-venus-mars"></i>
+                  <p>Han</p>
+                </div>
+              </div>
+              <button>LÆS MERE</button>
+            </div>
+          </a>
+          <button class="generalButtonStyling">INDLÆS FLERE</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
