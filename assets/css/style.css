@@ -9,6 +9,7 @@
     --babyBlue: #14A3C7;
     --beigeSections: #D9CBBF;
     --coffeeBrown: #594839;
+    --beigeIcons: #CDB693;
     /* Spacing */
 
 
@@ -123,5 +124,90 @@ nav ul a {
 .heroContent h1 {
     font-size: 70px;
 }
+
+
+
+/* ------------------------------------ styling enkelt-dyr-------------------------------------- */
+/* --------------------------- styling enkelt-dyr header start--------------------------- */
+.header-animal{
+    position: relative;
+    height: unset;
+}
+.navbar-animal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.headerLogo-animal{
+    flex: 1;
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--coffeeBrown);
+}
+.nav-ul-animal{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.nav-ul-animal li{
+    margin: 0 15px;
+}
+.nav-ul-animal li a{
+    color: var(--coffeeBrown);
+    text-decoration: none;
+}
+.navbar-animal button {
+    margin-left: 4rem;
+}
+/* --------------------------- styling enkelt-dyr header slut--------------------------- */
+.main-animal{
+    margin: 4rem 8rem;
+}
+.breadcrumbs{
+    margin: 0 2rem;
+}
+.breadcrumbs a{
+    text-decoration: none;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--coffeeBrown);
+}
+.single-animal{
+    display: flex;
+}
+.single-animal-data{
+
+}
+.single-animal-header{
+    display: flex;
+    align-items: baseline;
+}
+.single-animal-header h1{
+    color: var(--coffeeBrown);
+    font-weight: 500;
+    margin-right: 1rem;
+    font-size: 4rem;
+}
+.header-icon{
+    color: var(--beigeIcons);
+    font-size: 3rem;
+}
+.single-animal-img{
+    width: 50%;
+}
+.single-animal-img img{
+    width: 100%;
+}
+#col-left{
+}
+#col-right{
+
+}
+
+
+/* ------------------------------------ styling enkelt-dyr-------------------------------------- */
 
  
