@@ -125,6 +125,20 @@ nav ul a {
     font-size: 70px;
 }
 
+footer{
+    background-color: var(--coffeeBrown);
+    color: var(--beigeSections);
+}
+footer p{
+    margin: 4px;
+}
+.footer-bottom-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-bottom-row div{
+    display: flex;
+}
 
 
 /* ------------------------------------ styling enkelt-dyr-------------------------------------- */
@@ -195,7 +209,7 @@ nav ul a {
 .single-animal-img img{
     width: 100%;
 }
-.single-animal{
+.single-animal, .single-animal-under{
     display: flex;
     gap: 6rem;
     margin-bottom: 4rem;
