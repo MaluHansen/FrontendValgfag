@@ -1,3 +1,4 @@
+
 //alt info om JS date formatting og metoder er hentet fra kilden: https://www.w3schools.com/jsref/jsref_obj_date.asp
 // opretter to variabler, en function som bruger js indbyggede dateconstructor til at lave et 'date object' med dato ud fra aktuel tid
 const currentDate = new Date();
@@ -62,3 +63,16 @@ function createCalendar(year, month) {
 
 //kører functionen til at lave kalenderen ud fra det aktuelle år og måned ud fra variablen currentDate som blev oprettet helt i starten
 createCalendar(currentDate.getFullYear(), currentDate.getMonth());
+
+function selectButton(buttonId) {
+    // Fjerner 'active' class fra begge knapper
+    document.querySelectorAll('.buttonCatDog').forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Tilføjer 'active' class til den knap der bliver trykket op
+    document.getElementById(buttonId).classList.add('active');
+}
+
+
+
