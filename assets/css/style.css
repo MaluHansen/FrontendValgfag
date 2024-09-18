@@ -128,18 +128,48 @@ nav ul a {
 
 footer{
     background-color: var(--coffeeBrown);
-    color: var(--beigeSections);
+    color: white;
+    padding: 1rem 1rem;
 }
 footer p{
     margin: 4px;
 }
+.footer-header{
+    font-size: 2rem;
+}
 .footer-bottom-row{
     display: flex;
     justify-content: space-evenly;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
+.footer-upper-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 0 2rem 0;
 }
 .footer-bottom-row div{
     display: flex;
 }
+.footer-icon{
+    font-size: 2rem;
+}
+.footer-links-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.footer-links a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 /* ------------------------------------ styling enkelt-dyr-------------------------------------- */
