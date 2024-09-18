@@ -600,19 +600,28 @@ footer p{
   
 
   /* Animal Slider Section*/
+  
+.buttonSlider {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--babyBlue);
+    font-size: 2rem;
+  }
+  
   .cardSliderSection {
     background: var(--beigeSections);
-
+  
   }
   .cardSliderSectionNoBackground {
     background-color: #F6F4F5;
   }
- 
+  
   .cardSliderSectionText {
     padding: 2rem 5rem 2rem 5rem;
-
+  
   }
-
+  
   .cardSliderSectionText h2 {
     padding-bottom: 2rem;
     font-size: 30px;
@@ -623,30 +632,29 @@ footer p{
   }
   .cardSlider {
     display: flex;
-    padding: 0 5rem 3rem 5rem;
-    gap: 1rem;
+    padding: 0 2rem 0 2rem;
     justify-content: space-between;
+    gap: 1rem;
     flex-wrap: wrap;
-}
+  }
 
-
-
-.animalInfoCard {
+  
+  .animalInfoCard {
     font-size: 16px;
     flex-grow: 1; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.animalInfoCard h3 {
+  }
+  
+  .animalInfoCard h3 {
     font-size: 25px;
     background: var(--coffeeBrown);
     color: white;
     padding: 0.5rem; 
-}
-
-.animalInfoCard button {
+  }
+  
+  .animalInfoCard button {
     background-color: var(--babyBlue);
     color: #fff;
     border: none;
@@ -654,21 +662,40 @@ footer p{
     border-radius: 5px;
     width: fit-content; 
     align-self: center; 
-}
-
-
-.animalInfoMeta {
+  }
+  
+  
+  .animalInfoMeta {
     display: flex;
     justify-content: space-around;
-}
-
-.iconText i {
+  }
+  
+  .iconText i {
     color: #CDB693;
     font-size: 2rem;
     padding-bottom: 1rem;
+  
+  
+  }
 
-
-}
+  .slider-dots {
+    text-align: center; 
+    padding: 10px; 
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 12px; 
+    height: 12px;
+    margin: 0 5px; 
+    background-color: white; 
+    border-radius: 50%; 
+  }
+  .dotblue {
+    background-color: var(--babyBlue);
+  
+  }
+  
 
 
 /* Blog Slider Section */
