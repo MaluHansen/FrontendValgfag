@@ -73,6 +73,7 @@ main {
     padding-bottom: 2rem;
 }
 
+
 /* Generel text + image section */
 
 .textIntroSection {
@@ -284,14 +285,35 @@ footer p{
     flex-direction: column;
 }
 
+/* Footer hover effekt */
+.footer-icon {
+    color: white; 
+    transition: color 0.3s ease;
+  }
+  
+  .footer-icon:hover {
+    color: var(--babyBlue); 
+  }
+  
+  .footer-links a {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+  }
+  
+  .footer-links a:hover {
+    color: var(--babyBlue); 
+  }
+  
 
 
 /* ------------------------------------ styling enkelt-dyr-------------------------------------- */
 /* --------------------------- styling enkelt-dyr header slut--------------------------- */
 
 
-.main-animal {
+.animalPadding {
     padding: 4rem 8rem;
+    padding-bottom: 0;
 }
 .breadcrumbs{
     margin: 0 2rem;
