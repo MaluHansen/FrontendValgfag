@@ -542,6 +542,9 @@ footer p{
     background: var(--beigeSections);
 
   }
+  .cardSliderSectionNoBackground {
+    background-color: #F6F4F5;
+  }
  
   .cardSliderSectionText {
     padding: 2rem 5rem 2rem 5rem;
@@ -553,6 +556,9 @@ footer p{
     font-size: 30px;
   }
   
+  .cardSliderSectionH2Centered {
+    text-align: center;
+  }
   .cardSlider {
     display: flex;
     padding: 0 5rem 3rem 5rem;
@@ -760,6 +766,122 @@ footer p{
 }
 
 
+/* Adoptionsside */
+.adoptering-intro {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+ 
+.adoptering-intro img {
+    width: 50%;
+}
+ 
+.adoptering-intro-tekst p {
+    flex-direction: column;
+    color: #5D3D1D;
+}
+
+.adoptions-proces {
+    padding: 80px;
+    padding-top: 0;
+}
+.adoptering-intro {
+    padding: 80px 80px 0 80px;
+
+}
+ 
+.adoptions-proces h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    color: #342716;
+}
+ 
+.adoptions-proces-container {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 5rem;
+}
+ 
+.adoptions-proces-container article,
+.adoptions-proces-container p,
+.adoptions-proces-container i,
+.adoptions-proces-container h4,
+.adoptions-proces-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+.adoptions-proces-container p:first-child {
+    color: #14A3C7;
+    padding-right: 10rem;
+    font-size: 35px;
+}
+ 
+.adoptions-proces-container i {
+    font-size: 50px;
+    color: #5D3D1D;
+    background: white;
+    width: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    border-radius: 50%;
+}
+ 
+.adoptions-proces-container h3 {
+    font-size: 20px;
+    color: #342716;
+}
+ 
+.adoptions-proces-container p:last-child {
+    color: #5D3D1D;
+}
+ 
+.adoptions-proces-container h3,
+.adoptions-proces-container p:last-child {
+    margin-top: 1.5rem;
+}
+ 
+.adoptions-entry-points h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    color: #342716;
+}
+ 
+.adoption-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+ 
+.adoptions-entry-points i {
+    color: #F6F4F5;
+    background: #14A3C7;
+    width: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    border-radius: 50%;
+}
+ 
+.adoptions-entry-points a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    text-decoration: none;
+}
+ 
+.adoptions-entry-points button {
+    width: 245px;
+    height: 71px;
+    font-weight: 400;
+}
 
 
 
