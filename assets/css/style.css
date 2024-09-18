@@ -9,6 +9,7 @@
     --babyBlue: #14A3C7;
     --beigeSections: #D9CBBF;
     --coffeeBrown: #594839;
+    --beigeIcons: #CDB693;
     /* Spacing */
 
 
@@ -123,6 +124,256 @@ nav ul a {
 .heroContent h1 {
     font-size: 70px;
 }
+
+
+footer{
+    background-color: var(--coffeeBrown);
+    color: var(--beigeSections);
+}
+footer p{
+    margin: 4px;
+}
+.footer-bottom-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-bottom-row div{
+    display: flex;
+}
+
+
+/* ------------------------------------ styling enkelt-dyr-------------------------------------- */
+/* --------------------------- styling enkelt-dyr header start--------------------------- */
+.header-animal{
+    position: relative;
+    height: unset;
+}
+.navbar-animal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.headerLogo-animal{
+    flex: 1;
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--coffeeBrown);
+}
+.nav-ul-animal{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.nav-ul-animal li{
+    margin: 0 15px;
+}
+.nav-ul-animal li a{
+    color: var(--coffeeBrown);
+    text-decoration: none;
+}
+.navbar-animal button {
+    margin-left: 4rem;
+}
+/* --------------------------- styling enkelt-dyr header slut--------------------------- */
+.main-animal{
+    margin: 4rem 8rem;
+}
+.breadcrumbs{
+    margin: 0 2rem;
+}
+.breadcrumbs a{
+    text-decoration: none;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--coffeeBrown);
+}
+.single-animal-header{
+    display: flex;
+    align-items: baseline;
+}
+.single-animal-header h1{
+    color: var(--coffeeBrown);
+    font-weight: 500;
+    margin-right: 1rem;
+    font-size: 4rem;
+}
+.header-icon{
+    color: var(--beigeIcons);
+    font-size: 3rem;
+}
+.single-animal-img{
+    width: 50%;
+}
+.single-animal-img img{
+    width: 100%;
+}
+.single-animal, .single-animal-under{
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 4rem;
+}
+.single-animal-content{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.single-animal-data{
+    display: flex;
+    gap: 4rem;
+}
+.single-animal-data p{
+    margin: 1rem 1rem 0 0;
+    color: var(--coffeeBrown);
+    font-weight: 600;
+}
+.single-animal-data span{
+    margin-left: 1rem;
+    font-weight: 400;
+}
+.single-animal-description{
+    width: 50%;
+}
+.single-animal-description p{
+    margin-bottom: 2rem;
+}
+
+/*-----Calendar--------*/
+.animal-meeting-book{
+    width: 50%;
+}
+.animal-h2{
+    color: var(--coffeeBrown);
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.calendar-header{
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+#dates-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+#dates-grid div {
+    padding: 10px;
+    border-radius: 5px;
+}
+#dates-grid div:hover {
+    background-color: var(--babyBlue);
+    opacity: 20%;
+}
+.selected {
+    background-color: var(--babyBlue);
+    color: white;
+}
+.bottom-bar{
+    display: flex;
+    justify-content: space-between;
+}
+.selectedDate{
+    align-content: center;
+    background-color: #eee;
+    border: none;
+    width: 7rem;
+    height: 3rem;
+}
+
+
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    color: var(--coffeeBrown);
+}
+.checkboxes input{
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+.checkbox-style{
+    position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  
+}
+.checkbox-container{
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    font-size: 1rem;
+    margin: 1rem 0 1rem 0; 
+}
+.checkbox-container input:checked ~ .checkbox-style {
+    background-color: var(--babyBlue);
+}
+.checkbox-style:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox-container input:checked ~ .checkbox-style:after {
+    display: block;
+}
+.checkbox-container .checkbox-style:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+
+
+.calendar-section{
+    text-align: center;
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form-section p{
+    color: var(--coffeeBrown);
+    font-weight: 300;
+}
+.calendar-form-section{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.calendar-form-section input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* ------------------------------------ styling enkelt-dyr-------------------------------------- */
+
+ 
 
  
 
