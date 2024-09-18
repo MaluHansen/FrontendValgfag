@@ -47,6 +47,7 @@ main {
     width: 7rem;
     height: 3rem;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .centeredButtonStylingWhite {
@@ -62,7 +63,9 @@ main {
 
 /* Container for the centered button */
 .centeredButtonContainer {
-    display: flex;
+    
+    display: grid;
+    grid-column: 2/3;
     justify-content: center; 
     align-items: center;      
     padding-bottom: 2rem;
