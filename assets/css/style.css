@@ -47,7 +47,7 @@
 
 /* Hero Styling */
 
- 
+
 
 header {
     position: relative;
@@ -130,6 +130,32 @@ nav ul a {
 
 /* Index Page */
 
+/* Dyre cards (Index, arkivDyr, enkeltDyr, Adoptering  */ 
+.singularAnimalCard {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: white;
+    color: #342716;
+    text-decoration: none;
+    flex: 1; 
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.singularAnimalCard img {
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+    height: 10rem;
+    object-fit: cover; 
+}
+
+
+/* Forside entrypoints */
 .indexEntryPointcontainer {
     display: flex;
     justify-content: space-between;
@@ -138,41 +164,60 @@ nav ul a {
     margin: 0 auto;
     padding: 5rem;
     height: 30rem;
-  }
-  
-  .indexEntryPoint {
+}
+
+.indexEntryPoint {
     position: relative;
     flex: 1;
     border-radius: 10px;
     overflow: hidden;
-  }
-  
-  .indexEntryImage {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.indexEntryImage {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out; 
+}
 
-  }
-  
-  .indexoverlayText {
+.indexoverlayText {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 30%;
+    height: 35%;
     display: flex;
-  }
-  
-  .indexEntryText {
+    align-items: center; 
+    justify-content: flex-start; 
+    background: rgba(109, 101, 90, 0.40); 
+    transition: background 0.3s ease-in-out; 
+}
+
+.indexEntryText {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 10%;
-  }
+    transition: font-size 0.3s ease-in-out; 
+}
+
+/* Hover effect Entry Points*/
+.indexEntryPoint:hover .indexEntryImage {
+    transform: scale(1.20); 
+}
+
+.indexEntryPoint:hover .indexoverlayText {
+    background: rgba(109, 101, 90, 0.8);  
+}
+
+.indexEntryPoint:hover .indexEntryText {
+    font-size: 1.9rem; 
+}
+
   
 
-  /* Slider */
-
+  /* Animal Slider Section*/
   .cardSliderSection {
     background: var(--beigeSections);
 
@@ -196,28 +241,7 @@ nav ul a {
     flex-wrap: wrap;
 }
 
-.singularAnimalCard {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding-bottom: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background: white;
-    color: #342716;
-    text-decoration: none;
-    flex: 1; 
-    height: 25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
-.singularAnimalCard img {
-    border-radius: 10px 10px 0 0;
-    max-width: 100%;
-    height: 10rem;
-    object-fit: cover; 
-}
 
 .animalInfoCard {
     font-size: 16px;
@@ -258,7 +282,8 @@ nav ul a {
 
 }
 
-/* Blog Section */
+
+/* Blog Slider Section */
 
 .singularBlogCard {
     border: 1px solid #ccc;
@@ -307,4 +332,115 @@ nav ul a {
     border-radius: 6px;
 
 }
+
+
+/* Animal Archive */
+
+.dyreArkivContainer {
+    display: grid;
+    grid-template-columns: 20% 60%; 
+    gap: 5rem; 
+    margin: 5rem; 
+    width: 100%;
+}
+
+.arkivDyrfilter {
+    padding: 2rem;
+    background: var(--babyBlue);
+    border-radius: 10px;
+}
+
+.dyreArkivGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 3rem; 
+}
+
+
+.arkivDyrfilter h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.arkivFilterItem {
+    padding-bottom: 1rem;
+}
+
+
+.arkivFilterItem select {
+    width: 100%; 
+    display: block; 
+    padding: 0.5rem; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    
+    
+
+}
+
+.arkivFilterItem label {
+    color: white;
+
+}
+
+
+/* Kat/hund knap */
+.buttonCatDogContainer {
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.buttonCatDog {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: white; 
+    color: var(--babyBlue); 
+    font-size: 1.2rem; 
+    cursor: pointer;
+}
+
+.iconCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem; 
+    height: 4rem; 
+    border-radius: 50%; 
+    background-color: var(--babyBlue);
+    margin-bottom: 1rem; 
+}
+
+.iconCircle i {
+    color: white; 
+    font-size: 1.5rem; 
+}
+
+.buttonCatDog.active {
+    background-color: var(--babyBlue); 
+    color: white; 
+    border-color: var(--babyBlue); 
+}
+
+.buttonCatDog.active .iconCircle {
+    background-color: white; 
+}
+
+.buttonCatDog.active .iconCircle i {
+    color: var(--babyBlue) 
+}
+
+
+
+
+
+
 
