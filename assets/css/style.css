@@ -26,14 +26,20 @@
     font-family: "Barlow", sans-serif;
 }
 
+main {
+    background-color: #F6F4F5;    
+}
+
+
  
 
  
 
 /* Blue Button Styling */
 
-.generalButtonStyling{
-    color:white;
+/* General button styling */
+.generalButtonStyling, .centeredButtonStyling {
+    color: white;
     background-color: var(--babyBlue);
     border: none;
     font-weight: bold;
@@ -41,32 +47,35 @@
     width: 7rem;
     height: 3rem;
     border-radius: 6px;
-
+    cursor: pointer;
 }
+
+.centeredButtonStylingWhite {
+    color: var(--babyBlue);
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 6px;
+}
+
+/* Container for the centered button */
+.centeredButtonContainer {
+    
+    display: grid;
+    grid-column: 2/3;
+    justify-content: center; 
+    align-items: center;      
+    padding-bottom: 2rem;
+}
+
+
 
  
-
-/* Hero Styling */
-
-
-
-header {
-    position: relative;
-    height: 100vh;
-}
-
-.heroImage {
-    position: absolute;
-    object-fit: cover;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
- 
-
+/* Nav */
+/* Hvid nav */
 .navbar {
     display: flex;
     align-items: center;
@@ -101,8 +110,75 @@ nav ul a {
     text-decoration: none;
 }
 
- 
+/* --------------------------- styling enkelt-dyr header start--------------------------- */
+.header-animal{
+    position: relative;
+    height: unset;
+    background-color: #F6F4F5;
+}
+.navbar-animal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.headerLogo-animal{
+    flex: 1;
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--coffeeBrown);
+}
+.nav-ul-animal{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.nav-ul-animal li{
+    margin: 0 15px;
+}
+.nav-ul-animal li a{
+    color: var(--coffeeBrown);
+    text-decoration: none;
+}
+.navbar-animal button {
+    margin-left: 4rem;
+}
+/* Hero Styling */
+/* Index hero */
+.indexHeader {
+    position: relative;
+    height: 100vh;
+}
 
+/* Small hero */
+.smallHeader {
+    position: relative;
+    height: 50vh;
+}
+
+
+
+.heroImage {
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ 
+.centeredHeroH1 {
+    text-align: center;
+
+}
+.heroContent h1 {
+    font-size: 70px;
+}
+ 
 .headerLogo {
     flex: 1;
     font-size: 40px;
@@ -121,9 +197,6 @@ nav ul a {
 
  
 
-.heroContent h1 {
-    font-size: 70px;
-}
 
 
 footer{
@@ -173,43 +246,11 @@ footer p{
 
 
 /* ------------------------------------ styling enkelt-dyr-------------------------------------- */
-/* --------------------------- styling enkelt-dyr header start--------------------------- */
-.header-animal{
-    position: relative;
-    height: unset;
-}
-.navbar-animal{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-}
-.headerLogo-animal{
-    flex: 1;
-    font-size: 40px;
-    text-decoration: none;
-    color: var(--coffeeBrown);
-}
-.nav-ul-animal{
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-}
-.nav-ul-animal li{
-    margin: 0 15px;
-}
-.nav-ul-animal li a{
-    color: var(--coffeeBrown);
-    text-decoration: none;
-}
-.navbar-animal button {
-    margin-left: 4rem;
-}
 /* --------------------------- styling enkelt-dyr header slut--------------------------- */
-.main-animal{
-    margin: 4rem 8rem;
+
+
+.main-animal {
+    padding: 4rem 8rem;
 }
 .breadcrumbs{
     margin: 0 2rem;
@@ -405,9 +446,6 @@ footer p{
 
  
 
- 
-
-
 
 /* Index Page */
 
@@ -516,7 +554,7 @@ footer p{
   
   .cardSlider {
     display: flex;
-    padding: 0 5rem 5rem 5rem;
+    padding: 0 5rem 3rem 5rem;
     gap: 1rem;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -619,9 +657,9 @@ footer p{
 
 .dyreArkivContainer {
     display: grid;
-    grid-template-columns: 20% 60%; 
-    gap: 5rem; 
-    margin: 5rem; 
+    grid-template-columns: 20% 80%; 
+    padding: 7rem 5rem 5rem 5rem;
+
     width: 100%;
 }
 
@@ -634,7 +672,8 @@ footer p{
 .dyreArkivGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 3rem; 
+    gap: 2rem; 
+    margin-left: 5rem;
 }
 
 
