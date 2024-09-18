@@ -48,6 +48,7 @@ main {
     height: 3rem;
     border-radius: 6px;
     cursor: pointer;
+    
 }
 
 .centeredButtonStylingWhite {
@@ -64,12 +65,40 @@ main {
 /* Container for the centered button */
 .centeredButtonContainer {
     
+    padding-top: 1rem;
     display: grid;
     grid-column: 2/3;
     justify-content: center; 
     align-items: center;      
     padding-bottom: 2rem;
 }
+
+/* Generel text + image section */
+
+.textIntroSection {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 80px;
+}
+ 
+.textIntroSection img {
+    width: 50%;
+}
+ 
+.textIntroSectionText p {
+    flex-direction: column;
+    color: #5D3D1D;
+}
+ 
+/* .pension-intro-knap a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    text-decoration: none;
+}
+  */
 
 
 
@@ -886,30 +915,6 @@ footer p{
 
 /* Pensionside */
 
-.pension-intro {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 80px;
-}
- 
-.pension-intro img {
-    width: 50%;
-}
- 
-.pension-intro-tekst p {
-    flex-direction: column;
-    color: #5D3D1D;
-}
- 
-.pension-intro-knap a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    text-decoration: none;
-}
- 
 
 .pension-ansattes-erfaring {
     background: #D9CBBF;
