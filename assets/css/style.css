@@ -64,7 +64,7 @@ main {
 
 /* Container for the centered button */
 .centeredButtonContainer {
-    
+    text-decoration: none;
     padding-top: 1rem;
     display: grid;
     grid-column: 2/3;
@@ -91,14 +91,6 @@ main {
     color: #5D3D1D;
 }
  
-/* .pension-intro-knap a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    text-decoration: none;
-}
-  */
 
 
 
@@ -134,10 +126,24 @@ nav ul li {
 
  
 
-nav ul a {
-    color: white;
+/* Nav hover */
+
+.navbarItemsWhite ul li a, .headerLogo {
     text-decoration: none;
-}
+    color: white; 
+    transition: color 0.3s ease; 
+  }
+
+  .nav-ul-animal li a, .headerLogo-animal {
+    color: var(--coffeeBrown); 
+    transition: color 0.3s ease; 
+
+  }
+  
+  .navbarItemsWhite ul li a:hover, .headerLogo:hover, .nav-ul-animal li a:hover, .headerLogo-animal:hover {
+    color: var(--babyBlue); 
+  }
+  
 
 /* --------------------------- styling enkelt-dyr header start--------------------------- */
 .header-animal{
@@ -222,6 +228,11 @@ nav ul a {
     padding: 4rem;
     position: relative;
     z-index: 1;
+}
+
+.heroContent p {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
  
