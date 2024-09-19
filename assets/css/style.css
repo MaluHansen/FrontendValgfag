@@ -206,14 +206,14 @@ nav ul li {
  
 .heroContent {
     color: white;
-    position: absolute; /* For overlap på billedet */
+    position: absolute; 
     z-index: 1;
-    top: 50%; /* Vertikal placering */
-    left: 5%; /* Justér til venstre */
-    transform: translateY(-50%); /* Justér for centreret vertikal placering */
-    text-align: left; /* Tekstjustering til venstre */
+    top: 50%; 
+    left: 5%; 
+    transform: translateY(-50%); 
+    text-align: left; 
     padding: 2rem;
-    max-width: 40%; /* Begræns bredde for at undgå, at teksten fylder hele skærmen */
+    max-width: 40%; 
 }
  
 .heroContent h1 {
@@ -236,31 +236,22 @@ nav ul li {
 /* Small hero content styling */
 .smallHeroContent {
     color: white;
-    position: absolute; /* For at overlappe billedet */
+    position: absolute; 
     z-index: 1;
-    top: 28%; /* Vertikal centreret */
-    left: 50%; /* Horisontal centreret */
-    transform: translate(-50%, -50%); /* Justér for både horisontal og vertikal centreret placering */
-    text-align: center; /* Centrer teksten horisontalt */
+    top: 28%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
     padding: 2rem;
-    width: 100%; /* Sørg for, at indholdet ikke går ud over billedets bredde */
+    width: 100%; /
 }
  
 .smallHeroContent h1 {
-    font-size: 50px; /* Mindre størrelse til mindre hero */
+    font-size: 50px;
     margin: 0;
 }
  
-/* Hero Image styling remains the same */
-.heroImage {
-    position: absolute;
-    object-fit: cover;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+
 
   /* Footer */
 
