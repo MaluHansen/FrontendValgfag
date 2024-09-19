@@ -187,15 +187,71 @@ nav ul li {
     position: relative;
     height: 100vh;
 }
-
+ 
 /* Small hero */
 .smallHeader {
     position: relative;
     height: 50vh;
 }
-
-
-
+ 
+.heroImage {
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+ 
+.heroContent {
+    color: white;
+    position: absolute; /* For overlap på billedet */
+    z-index: 1;
+    top: 50%; /* Vertikal placering */
+    left: 5%; /* Justér til venstre */
+    transform: translateY(-50%); /* Justér for centreret vertikal placering */
+    text-align: left; /* Tekstjustering til venstre */
+    padding: 2rem;
+    max-width: 40%; /* Begræns bredde for at undgå, at teksten fylder hele skærmen */
+}
+ 
+.heroContent h1 {
+    font-size: 70px;
+    margin: 0;
+}
+ 
+.heroContent p {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+ 
+.headerLogo {
+    flex: 1;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+ 
+/* Small hero content styling */
+.smallHeroContent {
+    color: white;
+    position: absolute; /* For at overlappe billedet */
+    z-index: 1;
+    top: 28%; /* Vertikal centreret */
+    left: 50%; /* Horisontal centreret */
+    transform: translate(-50%, -50%); /* Justér for både horisontal og vertikal centreret placering */
+    text-align: center; /* Centrer teksten horisontalt */
+    padding: 2rem;
+    width: 100%; /* Sørg for, at indholdet ikke går ud over billedets bredde */
+}
+ 
+.smallHeroContent h1 {
+    font-size: 50px; /* Mindre størrelse til mindre hero */
+    margin: 0;
+}
+ 
+/* Hero Image styling remains the same */
 .heroImage {
     position: absolute;
     object-fit: cover;
@@ -206,39 +262,7 @@ nav ul li {
     height: 100%;
 }
 
- 
-.centeredHeroH1 {
-    text-align: center;
-
-}
-.heroContent h1 {
-    font-size: 70px;
-}
- 
-.headerLogo {
-    flex: 1;
-    font-size: 40px;
-    text-decoration: none;
-    color: white;
-}
-
- 
-
-.heroContent {
-    color: white;
-    padding: 4rem;
-    position: relative;
-    z-index: 1;
-}
-
-.heroContent p {
-    padding-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
- 
-
-
+  /* Footer */
 
 footer{
     background-color: var(--coffeeBrown);
