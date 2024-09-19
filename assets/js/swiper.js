@@ -6,12 +6,12 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerGroup: 1,
     loop: true,
     autoplay: {
-      delay: 2500, 
+      delay: 2000, 
       disableOnInteraction: false, 
       pauseOnMouseEnter: true, 
       reverseDirection: false, 
     },
-    speed: 1000,
+    speed: 8000,
     loopFillGroupWithBlank: true,
     navigation: {
       nextEl: ".swiper-button-next",
