@@ -1,37 +1,53 @@
+// Dokumentation kan findes: https://swiperjs.com/
 
 
+// Ny Swiper slider 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
-    spaceBetween: 10,
-    slidesPerGroup: 1,
-    loop: true,
-    autoplay: {
-      delay: 2000, 
-      disableOnInteraction: false, 
-      pauseOnMouseEnter: true, 
-      reverseDirection: false, 
-    },
-    speed: 8000,
-    loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  // Viser 4 slides per slide
+  slidesPerView: 4,
   
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+  // Afstanden mellem cards 10px
+  spaceBetween: 10,
   
+  // Flytter 1 card pr slide
+  slidesPerGroup: 1,
   
-  var swiperWrapper = document.querySelector('.swiper-wrapper');
-  var slides = swiperWrapper.querySelectorAll('.swiper-slide');
+  // Sætter slideren til at køre i loop
+  loop: true,
+
+  // Kører med autoplay
+  autoplay: {
+    // 2500 ms
+    delay: 2500, 
+    // Slideren stoppe når musen hover over
+    pauseOnMouseEnter: true, 
+    // slideren kører fremad
+    reverseDirection: false, 
+  },
   
-  // Begrænser max antal cards til 10 på slideren
-  if (slides.length > 10) {
-    for (var i = 10; i < slides.length; i++) {
-      slides[i].remove();
-    }
+  //  Hastighed mellem slides 2000 ms
+  speed: 2000,
+
+  // knapper til næste og forrige slide
+  navigation: {
+    nextEl: ".swiper-button-next", 
+    prevEl: ".swiper-button-prev", 
+  },
+
+  // Pagination (knapper under slider)
+  pagination: {
+    el: ".swiper-pagination", // Angiver elementet for pagination
+    clickable: true, 
+  },
+});
+
+// Begrænser max antal slides til 10 på slideren
+var swiperWrapper = document.querySelector('.swiper-wrapper');
+var slides = swiperWrapper.querySelectorAll('.swiper-slide');
+
+if (slides.length > 10) {
+  // Fjerner alle slides efter de første 10
+  for (var i = 10; i < slides.length; i++) {
+    slides[i].remove();
   }
-  
+}
