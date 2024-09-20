@@ -14,6 +14,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Link Swiper's CSS -->
+    <!-- https://swiperjs.com/  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="indexHeader">
@@ -34,7 +40,7 @@
         <a href="#"><button class="generalButtonStyling">Donér</button></a>
       </div>
     </header>
-    
+
     <main>
       <div class="heroContent">
         <h1>Sejr & Davidsen</h1>
@@ -89,116 +95,263 @@
             dem muligheden for et trygt og kærligt liv.
           </p>
         </div>
-        <div class="cardSlider">
-          <a href="your-link-here" class="buttonSlider">
-            <i class="fa fa-arrow-left"></i>
-          </a>
-          <a href="#" class="singularAnimalCard">
-            <img
-              src="./assets/img/germanShepard.jpg"
-              alt="Albert, a German Shepherd"
-            />
-            <div class="animalInfoCard">
-              <h3>Albert</h3>
-              <div class="animalInfoMeta">
-                <div class="iconText">
-                  <i class="fa-solid fa-paw"></i>
-                  <p>Labrador</p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide singularAnimalCard">
+              <img
+                src="./assets/img/germanShepard.jpg"
+                alt="Albert, a German Shepherd"
+                class="singularAnimalCardImage"
+              />
+              <div class="animalInfoCard">
+                <h3>Albert</h3>
+                <div class="animalInfoMeta">
+                  <div class="iconText">
+                    <i class="fa-solid fa-paw"></i>
+                    <p>Labrador</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p>5 år</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <p>Han</p>
+                  </div>
                 </div>
-                <div class="iconText">
-                  <i class="fas fa-birthday-cake"></i>
-                  <p>5 år</p>
-                </div>
-                <div class="iconText">
-                  <i class="fa-solid fa-venus-mars"></i>
-                  <p>Han</p>
-                </div>
+                <button class="animalInfoCardSliderButton">LÆS MERE</button>
               </div>
-              <button>LÆS MERE</button>
-            </div>
-          </a>
-          <a href="#" class="singularAnimalCard">
-            <img
-              src="./assets/img/germanShepard.jpg"
-              alt="Albert, a German Shepherd"
-            />
-            <div class="animalInfoCard">
-              <h3>Albert</h3>
-              <div class="animalInfoMeta">
-                <div class="iconText">
-                  <i class="fa-solid fa-paw"></i>
-                  <p>Labrador</p>
+            </a>
+            <a href="#" class="swiper-slide singularAnimalCard">
+              <img
+                src="./assets/img/germanShepard.jpg"
+                alt="Albert, a German Shepherd"
+                class="singularAnimalCardImage"
+              />
+              <div class="animalInfoCard">
+                <h3>Albert</h3>
+                <div class="animalInfoMeta">
+                  <div class="iconText">
+                    <i class="fa-solid fa-paw"></i>
+                    <p>Labrador</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p>5 år</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <p>Han</p>
+                  </div>
                 </div>
-                <div class="iconText">
-                  <i class="fas fa-birthday-cake"></i>
-                  <p>5 år</p>
-                </div>
-                <div class="iconText">
-                  <i class="fa-solid fa-venus-mars"></i>
-                  <p>Han</p>
-                </div>
+                <button class="animalInfoCardSliderButton">LÆS MERE</button>
               </div>
-              <button>LÆS MERE</button>
-            </div>
-          </a>
-          <a href="#" class="singularAnimalCard">
-            <img
-              src="./assets/img/germanShepard.jpg"
-              alt="Albert, a German Shepherd"
-            />
-            <div class="animalInfoCard">
-              <h3>Albert</h3>
-              <div class="animalInfoMeta">
-                <div class="iconText">
-                  <i class="fa-solid fa-paw"></i>
-                  <p>Labrador</p>
+            </a>
+            <a href="#" class="swiper-slide singularAnimalCard">
+              <img
+                src="./assets/img/germanShepard.jpg"
+                alt="Albert, a German Shepherd"
+                class="singularAnimalCardImage"
+              />
+              <div class="animalInfoCard">
+                <h3>Albert</h3>
+                <div class="animalInfoMeta">
+                  <div class="iconText">
+                    <i class="fa-solid fa-paw"></i>
+                    <p>Labrador</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p>5 år</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <p>Han</p>
+                  </div>
                 </div>
-                <div class="iconText">
-                  <i class="fas fa-birthday-cake"></i>
-                  <p>5 år</p>
-                </div>
-                <div class="iconText">
-                  <i class="fa-solid fa-venus-mars"></i>
-                  <p>Han</p>
-                </div>
+                <button class="animalInfoCardSliderButton">LÆS MERE</button>
               </div>
-              <button>LÆS MERE</button>
-            </div>
-          </a>
-          <a href="#" class="singularAnimalCard">
-            <img
-              src="./assets/img/germanShepard.jpg"
-              alt="Albert, a German Shepherd"
-            />
-            <div class="animalInfoCard">
-              <h3>Albert</h3>
-              <div class="animalInfoMeta">
-                <div class="iconText">
-                  <i class="fa-solid fa-paw"></i>
-                  <p>Labrador</p>
+            </a>
+            <a href="#" class="swiper-slide singularAnimalCard">
+              <img
+                src="./assets/img/germanShepard.jpg"
+                alt="Albert, a German Shepherd"
+                class="singularAnimalCardImage"
+              />
+              <div class="animalInfoCard">
+                <h3>Albert</h3>
+                <div class="animalInfoMeta">
+                  <div class="iconText">
+                    <i class="fa-solid fa-paw"></i>
+                    <p>Labrador</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p>5 år</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <p>Han</p>
+                  </div>
                 </div>
-                <div class="iconText">
-                  <i class="fas fa-birthday-cake"></i>
-                  <p>5 år</p>
-                </div>
-                <div class="iconText">
-                  <i class="fa-solid fa-venus-mars"></i>
-                  <p>Han</p>
-                </div>
+                <button class="animalInfoCardSliderButton">LÆS MERE</button>
               </div>
-              <button>LÆS MERE</button>
-            </div>
-          </a>
-          <a href="your-link-here" class="buttonSlider">
-            <i class="fa fa-arrow-right"></i>
-          </a>
+            </a>
+            <a href="#" class="swiper-slide singularAnimalCard">
+              <img
+                src="./assets/img/germanShepard.jpg"
+                alt="Albert, a German Shepherd"
+                class="singularAnimalCardImage"
+              />
+              <div class="animalInfoCard">
+                <h3>Albert</h3>
+                <div class="animalInfoMeta">
+                  <div class="iconText">
+                    <i class="fa-solid fa-paw"></i>
+                    <p>Labrador</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p>5 år</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <p>Han</p>
+                  </div>
+                </div>
+                <button class="animalInfoCardSliderButton">LÆS MERE</button>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide singularAnimalCard">
+              <img
+                src="./assets/img/germanShepard.jpg"
+                alt="Albert, a German Shepherd"
+                class="singularAnimalCardImage"
+              />
+              <div class="animalInfoCard">
+                <h3>Albert</h3>
+                <div class="animalInfoMeta">
+                  <div class="iconText">
+                    <i class="fa-solid fa-paw"></i>
+                    <p>Labrador</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p>5 år</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <p>Han</p>
+                  </div>
+                </div>
+                <button class="animalInfoCardSliderButton">LÆS MERE</button>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide singularAnimalCard">
+              <img
+                src="./assets/img/germanShepard.jpg"
+                alt="Albert, a German Shepherd"
+                class="singularAnimalCardImage"
+              />
+              <div class="animalInfoCard">
+                <h3>Albert</h3>
+                <div class="animalInfoMeta">
+                  <div class="iconText">
+                    <i class="fa-solid fa-paw"></i>
+                    <p>Labrador</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p>5 år</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <p>Han</p>
+                  </div>
+                </div>
+                <button class="animalInfoCardSliderButton">LÆS MERE</button>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide singularAnimalCard">
+              <img
+                src="./assets/img/germanShepard.jpg"
+                alt="Albert, a German Shepherd"
+                class="singularAnimalCardImage"
+              />
+              <div class="animalInfoCard">
+                <h3>Albert</h3>
+                <div class="animalInfoMeta">
+                  <div class="iconText">
+                    <i class="fa-solid fa-paw"></i>
+                    <p>Labrador</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p>5 år</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <p>Han</p>
+                  </div>
+                </div>
+                <button class="animalInfoCardSliderButton">LÆS MERE</button>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide singularAnimalCard">
+              <img
+                src="./assets/img/germanShepard.jpg"
+                alt="Albert, a German Shepherd"
+                class="singularAnimalCardImage"
+              />
+              <div class="animalInfoCard">
+                <h3>Albert</h3>
+                <div class="animalInfoMeta">
+                  <div class="iconText">
+                    <i class="fa-solid fa-paw"></i>
+                    <p>Labrador</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p>5 år</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <p>Han</p>
+                  </div>
+                </div>
+                <button class="animalInfoCardSliderButton">LÆS MERE</button>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide singularAnimalCard">
+              <img
+                src="./assets/img/germanShepard.jpg"
+                alt="Albert, a German Shepherd"
+                class="singularAnimalCardImage"
+              />
+              <div class="animalInfoCard">
+                <h3>Albert</h3>
+                <div class="animalInfoMeta">
+                  <div class="iconText">
+                    <i class="fa-solid fa-paw"></i>
+                    <p>Labrador</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p>5 år</p>
+                  </div>
+                  <div class="iconText">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <p>Han</p>
+                  </div>
+                </div>
+                <button class="animalInfoCardSliderButton">LÆS MERE</button>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="slider-dots">
-          <span class="dot"></span>
-          <span class="dot dotblue"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
 
         <a href="./arkivDyr.html" class="centeredButtonContainer">
           <button class="generalButtonStyling centeredButtonStylingWhite">
@@ -237,79 +390,88 @@
           <h2>Seneste blog indlæg</h2>
           <p>Her kan du læse vores seneste blogindlæg!</p>
         </div>
-        <div class="cardSlider">
-          <a href="#" class="singularBlogCard">
-            <button class="ButtonStylingBlogPost">Pleje</button>
-            <h3>Sådan holder du din hund ren</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="authorBlogCard">
-              <img src="./assets/img/placeHolderAuthor.jpg" alt="" />
-              <div>
-                <p>Lars Larsen</p>
-                <p>12/12-2024</p>
-              </div>
-            </div>
-          </a>
 
-          <a href="#" class="singularBlogCard">
-            <button class="ButtonStylingBlogPost">Pleje</button>
-            <h3>Sådan holder du din hund ren</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="authorBlogCard">
-              <img src="./assets/img/placeHolderAuthor.jpg" alt="" />
-              <div>
-                <p>Lars Larsen</p>
-                <p>12/12-2024</p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide singularBlogCard">
+              <button class="ButtonStylingBlogPost">Pleje</button>
+              <h3>Sådan holder du din hund ren</h3>
+              <p class="blogMainText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="authorBlogCard">
+                <img src="./assets/img/placeHolderAuthor.jpg" alt="" />
+                <div>
+                  <p>Lars Larsen</p>
+                  <p>12/12-2024</p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
 
-          <a href="#" class="singularBlogCard">
-            <button class="ButtonStylingBlogPost">Pleje</button>
-            <h3>Sådan holder du din hund ren</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="authorBlogCard">
-              <img src="./assets/img/placeHolderAuthor.jpg" alt="" />
-              <div>
-                <p>Lars Larsen</p>
-                <p>12/12-2024</p>
+            <a href="#" class="swiper-slide singularBlogCard">
+              <button class="ButtonStylingBlogPost">Pleje</button>
+              <h3>Sådan holder du din hund ren</h3>
+              <p class="blogMainText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="authorBlogCard">
+                <img src="./assets/img/placeHolderAuthor.jpg" alt="" />
+                <div>
+                  <p>Lars Larsen</p>
+                  <p>12/12-2024</p>
+                </div>
               </div>
-            </div>
-          </a>
-
-          <a href="#" class="singularBlogCard">
-            <button class="ButtonStylingBlogPost">Pleje</button>
-            <h3>Sådan holder du din hund ren</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="authorBlogCard">
-              <img src="./assets/img/placeHolderAuthor.jpg" alt="" />
-              <div>
-                <p>Lars Larsen</p>
-                <p>12/12-2024</p>
+            </a>
+            <a href="#" class="swiper-slide singularBlogCard">
+              <button class="ButtonStylingBlogPost">Pleje</button>
+              <h3>Sådan holder du din hund ren</h3>
+              <p class="blogMainText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="authorBlogCard">
+                <img src="./assets/img/placeHolderAuthor.jpg" alt="" />
+                <div>
+                  <p>Lars Larsen</p>
+                  <p>12/12-2024</p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+            <a href="#" class="swiper-slide singularBlogCard">
+              <button class="ButtonStylingBlogPost">Pleje</button>
+              <h3>Sådan holder du din hund ren</h3>
+              <p class="blogMainText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="authorBlogCard">
+                <img src="./assets/img/placeHolderAuthor.jpg" alt="" />
+                <div>
+                  <p>Lars Larsen</p>
+                  <p>12/12-2024</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide singularBlogCard">
+              <button class="ButtonStylingBlogPost">Pleje</button>
+              <h3>Sådan holder du din hund ren</h3>
+              <p class="blogMainText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="authorBlogCard">
+                <img src="./assets/img/placeHolderAuthor.jpg" alt="" />
+                <div>
+                  <p>Lars Larsen</p>
+                  <p>12/12-2024</p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
 
-      </div>
-      <div class="slider-dots">
-        <span class="dot"></span>
-        <span class="dot dotblue"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
         <a href="#" class="centeredButtonContainer">
           <button class="generalButtonStyling centeredButtonStylingWhite">
             ALLE BLOGS
@@ -380,5 +542,10 @@
         </div>
       </div>
     </footer>
+    <!-- Swiper JS cdn-->
+    <!-- https://swiperjs.com/ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/swiper.js"></script>
   </body>
 </html>

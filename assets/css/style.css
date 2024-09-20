@@ -10,9 +10,7 @@
     --beigeSections: #D9CBBF;
     --coffeeBrown: #594839;
     --beigeIcons: #CDB693;
-    /* Spacing */
-
-
+    
 }
 
  
@@ -71,6 +69,7 @@ main {
     justify-content: center; 
     align-items: center;      
     padding-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 
@@ -527,29 +526,7 @@ footer p{
 
 /* Index Page */
 
-/* Dyre cards (Index, arkivDyr, enkeltDyr, Adoptering  */ 
-.singularAnimalCard {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding-bottom: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background: white;
-    color: #342716;
-    text-decoration: none;
-    flex: 1; 
-    height: 25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
-.singularAnimalCard img {
-    border-radius: 10px 10px 0 0;
-    max-width: 100%;
-    height: 10rem;
-    object-fit: cover; 
-}
 
 
 /* Forside entrypoints */
@@ -616,24 +593,24 @@ footer p{
 
   /* Animal Slider Section*/
   
-.buttonSlider {
-    display: inline-flex;
+
+/* Card Slider Sektion (Swiper Library) */
+
+.cardSliderSection{
+    position: relative;  
+    height: 100%;
+    width: 100%;
     align-items: center;
-    text-decoration: none;
-    color: var(--babyBlue);
-    font-size: 2rem;
+  
   }
   
   .cardSliderSection {
     background: var(--beigeSections);
   
   }
-  .cardSliderSectionNoBackground {
-    background-color: #F6F4F5;
-  }
   
   .cardSliderSectionText {
-    padding: 2rem 5rem 2rem 5rem;
+    padding: 2rem 5rem 2rem 5%;
   
   }
   
@@ -649,10 +626,9 @@ footer p{
     display: flex;
     padding: 0 2rem 0 2rem;
     justify-content: space-between;
-    gap: 1rem;
     flex-wrap: wrap;
   }
-
+  
   
   .animalInfoCard {
     font-size: 16px;
@@ -666,10 +642,10 @@ footer p{
     font-size: 25px;
     background: var(--coffeeBrown);
     color: white;
-    padding: 0.5rem; 
+    padding: 1rem; 
   }
   
-  .animalInfoCard button {
+  .animalInfoCardSliderButton {
     background-color: var(--babyBlue);
     color: #fff;
     border: none;
@@ -677,12 +653,15 @@ footer p{
     border-radius: 5px;
     width: fit-content; 
     align-self: center; 
+    margin-bottom: 1.5rem;
   }
   
   
   .animalInfoMeta {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
   }
   
   .iconText i {
@@ -692,24 +671,57 @@ footer p{
   
   
   }
+  
+  .singularAnimalCard{
+    position: relative;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: white;
+    color: #342716;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-  .slider-dots {
-    text-align: center; 
-    padding: 10px; 
+    
   }
   
-  .dot {
-    display: inline-block;
-    width: 12px; 
-    height: 12px;
-    margin: 0 5px; 
-    background-color: white; 
-    border-radius: 50%; 
+  .singularAnimalCardImage{
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+    object-fit: cover; 
+    display: block;
+    margin: 0;
+    padding: 0;
   }
-  .dotblue {
-    background-color: var(--babyBlue);
+  
+  .swiper{
+    width: 90vw;
+  }
+
+  
+  .swiper-pagination{
+    position: absolute;
+    margin-bottom: 5rem;
+  }
+  
+  .swiper-pagination-bullet-active{
+    border-radius: 50%;
+    background-color: var(--babyBlue) !important;
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+    padding: 4rem 1.5rem 2rem 1.5rem;
+
+  }
+  .swiper-button-next::after, .swiper-button-prev::after{
+    color: var(--babyBlue);
   
   }
+  
   
 
 
@@ -724,11 +736,19 @@ footer p{
     background: white;
     color: #342716;
     text-decoration: none;
-    flex: 1; 
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+}
+
+.blogMainText {
+    padding-bottom: 1rem;
+}
+
+.singularBlogCard h3 {
+    padding-top: 1rem;
 }
 
 .singularBlogCard img {
@@ -766,6 +786,30 @@ footer p{
 
 /* Animal Archive */
 
+/* Dyre cards (Index, arkivDyr, enkeltDyr, Adoptering  */ 
+.singularAnimalCardArchive {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: white;
+    color: #342716;
+    text-decoration: none;
+    flex: 1; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.singularAnimalCardArchive img {
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+    height: 10rem;
+    object-fit: cover; 
+}
+
 .dyreArkivContainer {
     display: grid;
     grid-template-columns: 20% 80%; 
@@ -787,6 +831,16 @@ footer p{
     margin-left: 5rem;
 }
 
+.animalInfoCardGridButton {
+    background-color: var(--babyBlue);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content; 
+    align-self: center; 
+    
+}
 
 .arkivDyrfilter h2 {
     color: white;
